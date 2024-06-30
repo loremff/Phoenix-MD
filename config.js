@@ -1,4 +1,4 @@
-const { Sequelize } = require("sequelize");
+hconst { Sequelize } = require("sequelize");
 const fs = require("fs");
 if (fs.existsSync("config.env"))
   require("dotenv").config({ path: "./config.env" });
@@ -10,7 +10,7 @@ let HANDLER = "false";
 
 module.exports = {
   //For Enabling Commands Like AUTO_STATUS_RED Type true For Disenabling Type false
-  ANTILINK: toBool(process.env.ANTI_LINK) || false,
+  ANTILINK: toBool(process.env.ANTI_LINK) || true,
   //_________________________________________________________________________________________________________________________________
   LOGS: toBool(process.env.LOGS) || true,
   //_________________________________________________________________________________________________________________________________
@@ -22,11 +22,11 @@ module.exports = {
   //_________________________________________________________________________________________________________________________________
   AUDIO_DATA: process.env.AUDIO_DATA || "Phoenix-MD;Abhishek Suresh;https://graph.org/file/8976892f2f615077b48cd.jpg",
   //_________________________________________________________________________________________________________________________________
-  AUTO_STATUS_READ: process.env.AUTO_STATUS_READ || 'false',
+  AUTO_STATUS_READ: process.env.AUTO_STATUS_READ || 'true',
   //_________________________________________________________________________________________________________________________________
-  SESSION_ID: process.env.SESSION_ID || "", //Enter Your Session Id Here
+  SESSION_ID: process.env.SESSION_ID || "Phoenix~xTUQcmqW", //Enter Your Session Id Here
   //_________________________________________________________________________________________________________________________________
-  SUDO: process.env.SUDO || "919074692450",
+  SUDO: process.env.SUDO || "94703371386",
   //_________________________________________________________________________________________________________________________________
   SPAM_COUNT: process.env.SPAM_COUNT || "10",
   //_________________________________________________________________________________________________________________________________
@@ -50,9 +50,9 @@ module.exports = {
   //_________________________________________________________________________________________________________________________________
   HEROKU_API_KEY: process.env.HEROKU_API_KEY || " ",
   //_________________________________________________________________________________________________________________________________
-  OWNER_NAME: process.env.OWNER_NAME || "Abhishek Suresh",
+  OWNER_NAME: process.env.OWNER_NAME || "Umesh eshan",
   //_________________________________________________________________________________________________________________________________
-  OWNER_NUMBER: process.env.OWNER_NUMBER || "918157993101",
+  OWNER_NUMBER: process.env.OWNER_NUMBER || "94703371386",
   //_________________________________________________________________________________________________________________________________
   BOT_NAME: process.env.BOT_NAME || "Phoenix-MD",
   //_________________________________________________________________________________________________________________________________
